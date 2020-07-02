@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("./fonts/inter-regular.woff") format("woff2");
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  src: url("./fonts/roboto-medium.woff") format("woff2");
+}

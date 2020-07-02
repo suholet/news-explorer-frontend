@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mesto</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="<%=require('./images/favicon-32x32.png').default%>"
+    />
+    <link
+      rel="stylesheet"
+      href="<%= htmlWebpackPlugin.files.chunks.main.css %>"
+    />
+  </head>
+  <body>
+    <div class="root">
+      <header class="header root__section">
+        <p>NewsExplorer</p>
+        <ul>
+          <li>Главная</li>
+          <li>Сохранённые статьи</li>
+          <li>Авторизоваться</li>
+        </ul>
+      </header>
+
+      <!-- Блок с поиском -->
+      <div class="search root__section">
+        <h1>Что в мире твориться?</h1>
+        <p>Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+        <input
+          type="text"
+          placeholder="Введите тему новости"
+        />
+        <button>Искать</button>
+      </div>
+
+      <!-- Результаты поиска -->
+      <div class="search root__section">
+        <div class="search__progress">
+          <img
+            src="<%=require('./images/not-found.svg').default%>"
+            alt="Not found"
+            class="search__not-found"
+          />
+          <h2>Ничего не найдено</h2>
+          <p>К сожалению по вашему запросу ничего не найдено.</p>
+        </div>
+        <div class="search__results">
+          <h2>Результаты поиска</h2>
+          <!-- Тут рисуем карточки -->
+          <div class="search__results-list"></div>
+        </div>
+      </div>
+
+      <!-- Об авторе -->
+      <div class="profile root__section">
+        <img src="<%=require('./images/profile.jpg').default%>" alt="Сухолет Дмитрий" />
+        <h2>Об авторе</h2>
+        <p>Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+        <p>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+      </div>
+
+      <!-- Окно редактирования профиля -->
+      <div class="popup">
+        <div class="popup__content">
+          <img
+            src="<%=require('./images/close.svg').default%>"
+            alt="Close"
+            class="popup__close"
+          />
+          <h2 class="popup__title">Вход</h2>
+          <form class="popup__form" name="signin" novalidate>
+            <div class="popup__input-container">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="popup__input popup__input_type_email"
+                placeholder="Введите почту"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <span id="error-email" class="error-message"></span>
+            </div>
+            <div class="popup__input-container">
+              <input
+                id="password"
+                type="password"
+                name="password"
+                class="popup__input popup__input_type_password"
+                placeholder="Введите пароль"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <span id="error-password" class="error-message"></span>
+            </div>
+            <div class="popup__input-container">
+              <input
+                id="name"
+                type="text"
+                name="name"
+                class="popup__input popup__input_type_name"
+                placeholder="Введите своё имя"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <span id="error-name" class="error-message"></span>
+            </div>
+            <button type class="button popup__button popup__button-edit">
+              Войти
+            </button>
+            <p>
+              или
+              <a href="">Зарегистрироваться</a>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Шаблон карточки -->
+      <template data-component="card">
+        <div class="news-card">
+          <div class="news-card__image">
+            <button class="news-card__save-icon"></button>
+          </div>
+          <div class="news-card__description">
+            <p class="news-card__date">2 августа, 2019</p>
+            <h2 class="news-card__title">Национальное достояние – парки</h2>
+            <p class="news-card__like-counter">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+            <p class="news-media">Лента.ру</p>
+          </div>
+        </div>
+      </template>
+
+      <footer>
+        <p>&copy; 2020 Supersite, Powered by News API</p>
+        <ul>
+          <li>Главная</li>
+          <li>Яндекс.Практикум</li>
+        </ul>
+        <ul>
+          <li>
+            <img
+              src="<%=require('./images/github.svg').default%>"
+              alt="Github"
+              class=""
+            />
+          </li>
+          <li>
+            <img
+              src="<%=require('./images/fb.svg').default%>"
+              alt="Facebook"
+              class=""
+            />
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  </body>
+</html>
