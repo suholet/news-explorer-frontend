@@ -4,6 +4,6 @@
 }
 
 .header__menu-link_button_logout::after {
-  content: url('/src/images/logout.svg');
+  content: url('../../../images/logout.svg');
   position: absolute;
 }

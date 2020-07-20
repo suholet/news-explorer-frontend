@@ -6,7 +6,7 @@
   background-color: #ffffff;
   border-radius: 8px;
   border: hidden;
-  background: url('/src/images/bookmark-empty.png');
+  background: url('../../../images/bookmark-empty.png');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -29,14 +29,14 @@
 
 .news-card__save-icon:hover {
   cursor: pointer;
-  background: url('/src/images/bookmark-empty-hovered.png');
+  background: url('../../../images/bookmark-empty-hovered.png');
 }
 
 .news-card__save-icon_saved {
-  background: url('/src/images/bookmark.png');
+  background: url('../../../images/bookmark.png');
 }
 
 .news-card__save-icon_saved:hover {
   cursor: pointer;
-  background: url('/src/images/bookmark-hovered.png');
+  background: url('../../../images/bookmark-hovered.png');
 }

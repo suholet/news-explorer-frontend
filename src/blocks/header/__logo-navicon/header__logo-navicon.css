@@ -5,7 +5,7 @@
     min-height: 24px;
     padding: 0;
     margin: 16px;
-    background: url('/src/images/menu.svg');
+    background: url('../../../images/menu.svg');
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -14,13 +14,13 @@
 
 @media screen and (max-width: 740px) {
   .header__logo-navicon_light {
-    background: url('/src/images/menu-light.svg');
+    background: url('../../../images/menu-light.svg');
   }
 }
 
 @media screen and (max-width: 740px) {
   .header__logo-navicon_mop {
-    background: url('/src/images/navbarclose.svg');
+    background: url('../../../images/navbarclose.svg');
   }
 }
 

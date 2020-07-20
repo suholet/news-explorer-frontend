@@ -6,7 +6,7 @@
   background-color: #ffffff;
   border-radius: 8px;
   border: hidden;
-  background: url('/src/images/trash.png');
+  background: url('../../../images/trash.png');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -17,5 +17,5 @@
 
 .news-card__delete-icon:hover {
   cursor: pointer;
-  background: url('/src/images/trash-hovered.png');
+  background: url('../../../images/trash-hovered.png');
 }
