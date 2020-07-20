@@ -1,0 +1,22 @@
+.user-profile__img {
+  width: 464px;
+  height: 464px;
+  margin: 80px 56px 80px 104px;
+  border-radius: 1000px;
+}
+
+@media screen and (max-width: 980px) {
+  .user-profile__img {
+    width: 232px;
+    height: 232px;
+    margin: 61px 32px 61px 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .user-profile__img  {
+    width: 272px;
+    height: 272px;
+    margin: 32px auto 24px auto;
+  }
+}

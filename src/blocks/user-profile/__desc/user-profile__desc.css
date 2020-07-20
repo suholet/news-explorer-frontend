@@ -1,0 +1,15 @@
+.user-profile__desc {
+  margin: 131px 40px 0 0;
+}
+
+@media screen and (max-width: 980px) {
+  .user-profile__desc {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .user-profile__desc  {
+    margin: 0 auto;
+  }
+}

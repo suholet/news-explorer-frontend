@@ -1,0 +1,23 @@
+.user-profile__title {
+  margin: 0 auto 24px 0;
+  font-family: 'Roboto Slab', Times, serif;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 980px) {
+  .user-profile__title {
+    margin-bottom: 19px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .user-profile__title  {
+    margin-bottom: 16px;
+  }
+}
