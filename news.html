@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>News Explorer</title>
+    <meta name="author" content="Dmitry Suholet">
+    <meta name="description" content="Praktikum diploma project">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="main.ff2233d27d13dc0f4883.css"
+    />
+  </head>
+  <body>
+    <div class="root">
+      <div class="cover-news">
+        <header class="header header-light">
+          <div class="header__logo">
+            <a class="header__logo-txt" href="./index.html">NewsExplorer</a>
+            <span class="header__logo-navicon header__logo-navicon_light"></span>
+          </div>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="./index.html">Главная</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link header__menu-link_selected" href="./news.html">Сохранённые статьи</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link header__menu-link_button" href="#">Авторизоваться&nbsp;</a>
+            </li>
+          </ul>
+        </header>
+
+        <!-- Блок с поиском -->
+        <div class="statistics">
+          <h1 class="statistics__title">Сохранённые статьи</h1>
+          <p class="statistics__greetings">Дмитрий, у вас 5 сохранённых статей</p>
+          <p class="statistics__label">По ключевым словам: <span class="bold">Природа</span>, <span class="bold">Тайга</span> и <span class="bold">2 другим</span></p>
+        </div>
+      </div>
+
+      <!-- Результаты поиска -->
+      <div class="search__results">
+        <div class="search__results-list">
+          <h2 class="search__results-list-title">Результаты поиска</h2>
+          <!-- Тут рисуем карточки -->
+          <div class="search__results-list-cards">
+            <div class="search__results-list-cards-portion">
+
+              <div class="news-card">
+                <div class="news-card__image">
+                  <span class="news-card__tag">Природа</span>
+                  <div class="news-card__tooltip-wrapper">
+                    <span class="news-card__tooltip-text">Удалить</span>
+                    <button class="news-card__delete-icon"></button>
+                  </div>
+                </div>
+                <div class="news-card__description">
+                  <p class="news-card__date">2 августа, 2019</p>
+                  <h2 class="news-card__title">Национальное достояние – парки</h2>
+                  <p class="news-card__txt">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                  <p class="news-card__media">Лента.ру</p>
+                </div>
+              </div>
+
+              <div class="news-card">
+                <div class="news-card__image">
+                  <span class="news-card__tag">Природа</span>
+                  <div class="news-card__tooltip-wrapper">
+                    <span class="news-card__tooltip-text">Удалить</span>
+                    <button class="news-card__delete-icon"></button>
+                  </div>
+                </div>
+                <div class="news-card__description">
+                  <p class="news-card__date">2 августа, 2019</p>
+                  <h2 class="news-card__title">Национальное достояние – парки</h2>
+                  <p class="news-card__txt">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                  <p class="news-card__media">Лента.ру</p>
+                </div>
+              </div>
+
+              <div class="news-card">
+                <div class="news-card__image">
+                  <span class="news-card__tag">Тайга</span>
+                  <div class="news-card__tooltip-wrapper">
+                    <span class="news-card__tooltip-text">Удалить</span>
+                    <button class="news-card__delete-icon"></button>
+                  </div>
+                </div>
+                <div class="news-card__description">
+                  <p class="news-card__date">2 августа, 2019</p>
+                  <h2 class="news-card__title">Национальное достояние – парки</h2>
+                  <p class="news-card__txt">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                  <p class="news-card__media">Лента.ру</p>
+                </div>
+              </div>
+
+            </div>
+            <button class="search__results-list-button">Показать еще</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Шаблон карточки -->
+      <template data-component="card">
+        <div class="news-card">
+          <div class="news-card__image">
+            <span class="news-card__tag">Тайга</span>
+            <div class="news-card__tooltip-wrapper">
+              <span class="news-card__tooltip-text">Удалить</span>
+              <button class="news-card__delete-icon"></button>
+            </div>
+          </div>
+          <div class="news-card__description">
+            <p class="news-card__date">2 августа, 2019</p>
+            <h2 class="news-card__title">Национальное достояние – парки</h2>
+            <p class="news-card__txt">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+            <p class="news-card__media">Лента.ру</p>
+          </div>
+        </div>
+      </template>
+
+      <footer class="footer">
+        <p class="footer__copy">&copy; 2020 Supersite, Powered by News API</p>
+        <div class="footer__menu">
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a class="footer__nav-item-link" href="./index.html">Главная</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-item-link" href="https://praktikum.yandex.ru" target="_blank">Яндекс.Практикум</a>
+            </li>
+          </ul>
+          <ul class="footer__social">
+            <li>
+              <a href="https://github.com/suholet" target="_blank">
+                <img
+                  src="./images/github.svg"
+                  alt="Github"
+                  class="footer__social-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/suholet" target="_blank">
+                <img
+                  src="./images/fb.svg"
+                  alt="Facebook"
+                  class="footer__social-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="main.7003878f57d214518e09.js"></script>
+  </body>
+</html>
