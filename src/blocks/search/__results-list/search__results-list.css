@@ -1,0 +1,11 @@
+.search__results-list {
+  min-height: 974px;
+  /* width: calc(100% - 208px); */
+  margin: auto;
+}
+
+@media screen and (max-width: 980px) {
+  .search__results-list {
+    min-height: 654px;
+  }
+}

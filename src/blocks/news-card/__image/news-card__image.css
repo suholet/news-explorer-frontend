@@ -1,0 +1,29 @@
+.news-card__image {
+  display: flex;
+  justify-content: space-between;
+  height: 272px;
+  max-width: 400px;
+  margin: 0;
+  text-align: right;
+  color: #ffffff;
+  background: url('/src/images/card.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+@media screen and (max-width: 980px) {
+  .news-card__image {
+    height: 150px;
+    max-width: 224px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .news-card__image {
+    height: 196px;
+    max-width: 288px;
+  }
+}

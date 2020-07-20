@@ -1,0 +1,18 @@
+.header__menu-link_selected {
+  padding-bottom: 27px;
+  border-bottom: 3px solid #1a1b22;
+}
+
+@media screen and (max-width: 980px) {
+  .header__menu-link_selected {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header__menu-link_selected {
+    padding-bottom: 0;
+    border-bottom: 0;
+    color: #ffffff;
+  }
+}

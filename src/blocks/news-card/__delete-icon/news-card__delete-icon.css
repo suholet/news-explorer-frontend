@@ -1,0 +1,21 @@
+.news-card__delete-icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  /* margin: 24px 24px auto auto; */
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: hidden;
+  background: url('/src/images/trash.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.news-card__delete-icon:focus{
+  outline: none;
+}
+
+.news-card__delete-icon:hover {
+  cursor: pointer;
+  background: url('/src/images/trash-hovered.png');
+}

@@ -1,0 +1,17 @@
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 740px) {
+  .header__logo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header__logo_mop {
+    background-color: #1a1b22;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}

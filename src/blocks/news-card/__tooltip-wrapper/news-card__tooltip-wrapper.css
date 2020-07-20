@@ -1,0 +1,17 @@
+.news-card__tooltip-wrapper {
+  width: fit-content;
+  height: fit-content;
+  margin: 24px 24px auto auto;
+}
+
+@media screen and (max-width: 980px) {
+  .news-card__tooltip-wrapper {
+    margin: 8px 8px auto auto;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .news-card__tooltip-wrapper {
+    margin: 16px 16px auto auto;
+  }
+}

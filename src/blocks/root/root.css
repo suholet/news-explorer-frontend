@@ -1,0 +1,10 @@
+.root {
+  background-color: #ffffff;
+  min-height: 100vh;
+  font-family: Roboto, Times, serif;;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

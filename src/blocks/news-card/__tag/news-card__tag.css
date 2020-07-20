@@ -1,0 +1,27 @@
+.news-card__tag {
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 12px;
+  margin: 24px auto auto 24px;
+  font-family: Roboto, Times, serif;;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 980px) {
+  .news-card__tag {
+    margin: 8px auto auto 8px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .news-card__tag {
+    margin: 16px auto auto 16px;
+  }
+}

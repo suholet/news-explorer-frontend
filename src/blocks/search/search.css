@@ -1,0 +1,39 @@
+@import url(./__title/search__title.css);
+@import url(./__desc/search__desc.css);
+@import url(./__input/search__input.css);
+@import url(./__button/search__button.css);
+@import url(./__results/search__results.css);
+@import url(./__results-request/search__results-request.css);
+@import url(./__results-request-progress/search__results-request-progress.css);
+@import url(./__results-request-progress-preloader/search__results-request-progress-preloader.css);
+@import url(./__results-request-progress-txt/search__results-request-progress-txt.css);
+@import url(./__results-request-notfound/search__results-request-notfound.css);
+@import url(./__results-request-notfound-img/search__results-request-notfound-img.css);
+@import url(./__results-request-notfound-title/search__results-request-notfound-title.css);
+@import url(./__results-request-notfound-txt/search__results-request-notfound-txt.css);
+@import url(./__results-list/search__results-list.css);
+@import url(./__results-list-title/search__results-list-title.css);
+@import url(./__results-list-cards/search__results-list-cards.css);
+@import url(./__results-list-cards-portion/search__results-list-cards-portion.css);
+@import url(./__results-list-button/search__results-list-button.css);
+
+
+/********* Поиск *********/
+.search {
+  min-height: 496px;
+  max-width: 608px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 980px) {
+  .search {
+    min-height: 296px; /* 334 - 38 */
+    max-width: 452px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .search {
+    min-height: 450px; /* 480 - 30 */
+  }
+}

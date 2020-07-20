@@ -1,0 +1,22 @@
+.search__results-list-title {
+  padding-top: 80px;
+  margin: 0 auto 64px 104px;
+  font-family: 'Roboto Slab', Times, serif;;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 980px) {
+  .search__results-list-title  {
+    padding-top: 40px;
+    margin: 0 auto 32px 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .search__results-list-title {
+    padding-top: 32px;
+    margin: 0 auto 24px 16px;
+  }
+}

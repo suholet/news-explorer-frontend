@@ -1,0 +1,28 @@
+.news-card__txt {
+  margin: 0 24px 18px 24px;
+  height: 110px;
+  font-family: Roboto, Times, serif;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 980px) {
+  .news-card__txt {
+    margin: 0 16px 12px 16px;
+    height: 88px;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .news-card__txt {
+    margin: 0 16px 8px 16px;
+  }
+}

@@ -1,0 +1,22 @@
+.search__results-list-cards-portion {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* margin-bottom: 64px; */
+  /* margin-bottom: 48px; */
+  margin: 0 88px 48px 104px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 980px) {
+  .search__results-list-cards-portion {
+    margin: 0 32px 24px 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .search__results-list-cards-portion {
+    margin: 0 0 16px 16px;
+  }
+}

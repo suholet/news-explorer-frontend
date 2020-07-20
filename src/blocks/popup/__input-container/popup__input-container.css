@@ -1,0 +1,14 @@
+.popup__input-container{
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 740px) {
+  .popup__input-container{
+    margin-bottom: 30px;
+  }
+}
+
+.popup__input-container_invalid .error-message {
+  padding: 10px;
+  opacity: 1;
+}

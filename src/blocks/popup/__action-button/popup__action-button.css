@@ -1,0 +1,21 @@
+.popup__action-button {
+  width: 100%;
+  height: 64px;
+  margin-top: 8px;
+  border-radius: 100px;
+  border: none;
+  background: #2f71e5;
+  color: #ffffff;
+  cursor: pointer;
+
+}
+
+.popup__action-button:focus {
+  background: #347eff;
+}
+
+.popup__action-button:disabled {
+  background: #e6e8eb;
+  color: #b6bcbf;
+  cursor: default;
+}

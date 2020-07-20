@@ -1,0 +1,26 @@
+@import url(./_mop/header__menu-item_mop.css);
+@import url(./_hidden/header__menu-item_hidden.css);
+
+.header__menu-item {
+  margin-left: 32px;
+}
+
+.header__menu-item_hidden {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .header__menu-item {
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header__menu-item_mop {
+    width: 100%;
+    margin: 32px 0 24px 0;
+    display: flex;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
