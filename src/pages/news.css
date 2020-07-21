@@ -4,14 +4,12 @@
 @import url(../blocks/root/root.css);
 @import url(../blocks/bold/bold.css);
 @import url(../blocks/header/header.css);
-@import url(../blocks/dark/dark.css);
-@import url(../blocks/cover/cover.css);
+@import url(../blocks/cover-news/cover-news.css);
 @import url(../blocks/search/search.css);
+@import url(../blocks/statistics/statistics.css);
 @import url(../blocks/news-card/news-card.css);
-@import url(../blocks/user-profile/user-profile.css);
 @import url(../blocks/footer/footer.css);
-@import url(../blocks/error-message/error-message.css);
-@import url(../blocks/popup/popup.css);
+@import url(../blocks/header-light/header-light.css);
 
 body {
   background-color: #ffffff;

@@ -8,12 +8,15 @@ const webpack = require("webpack");
 const isDev = process.env.NODE_ENV === "development";
 
 module.exports = {
-  entry: { main: "./src/js/script.js" },
+  entry: {
+    index: ["./src/js/index.js", "./src/pages/index.css"],
+    news: ["./src/js/news.js", "./src/pages/news.css"],
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[chunkhash].js",
   },
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
@@ -49,7 +52,8 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "main.[contenthash].css",
+      // filename: "index.[contenthash].css",
+      filename: "[name].[contenthash].css",
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,

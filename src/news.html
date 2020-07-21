@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>News Explorer</title>
-    <meta name="author" content="Dmitry Suholet">
-    <meta name="description" content="Praktikum diploma project">
+    <meta name="author" content="Dmitry Suholet" />
+    <meta name="description" content="Praktikum diploma project" />
     <link
       rel="icon"
       type="image/png"
@@ -15,7 +15,7 @@
     />
     <link
       rel="stylesheet"
-      href="<%= htmlWebpackPlugin.files.chunks.main.css %>"
+      href="<%= htmlWebpackPlugin.files.chunks.news.css %>"
     />
   </head>
   <body>
@@ -24,17 +24,25 @@
         <header class="header header-light">
           <div class="header__logo">
             <a class="header__logo-txt" href="./index.html">NewsExplorer</a>
-            <span class="header__logo-navicon header__logo-navicon_light"></span>
+            <span
+              class="header__logo-navicon header__logo-navicon_light"
+            ></span>
           </div>
           <ul class="header__menu">
             <li class="header__menu-item">
               <a class="header__menu-link" href="./index.html">Главная</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link header__menu-link_selected" href="./news.html">Сохранённые статьи</a>
+              <a
+                class="header__menu-link header__menu-link_selected"
+                href="./news.html"
+                >Сохранённые статьи</a
+              >
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link header__menu-link_button" href="#">Авторизоваться&nbsp;</a>
+              <a class="header__menu-link header__menu-link_button" href="#"
+                >Авторизоваться&nbsp;</a
+              >
             </li>
           </ul>
         </header>
@@ -42,8 +50,13 @@
         <!-- Блок с поиском -->
         <div class="statistics">
           <h1 class="statistics__title">Сохранённые статьи</h1>
-          <p class="statistics__greetings">Дмитрий, у вас 5 сохранённых статей</p>
-          <p class="statistics__label">По ключевым словам: <span class="bold">Природа</span>, <span class="bold">Тайга</span> и <span class="bold">2 другим</span></p>
+          <p class="statistics__greetings">
+            Дмитрий, у вас 5 сохранённых статей
+          </p>
+          <p class="statistics__label">
+            По ключевым словам: <span class="bold">Природа</span>,
+            <span class="bold">Тайга</span> и <span class="bold">2 другим</span>
+          </p>
         </div>
       </div>
 
@@ -54,7 +67,6 @@
           <!-- Тут рисуем карточки -->
           <div class="search__results-list-cards">
             <div class="search__results-list-cards-portion">
-
               <div class="news-card">
                 <div class="news-card__image">
                   <span class="news-card__tag">Природа</span>
@@ -65,8 +77,15 @@
                 </div>
                 <div class="news-card__description">
                   <p class="news-card__date">2 августа, 2019</p>
-                  <h2 class="news-card__title">Национальное достояние – парки</h2>
-                  <p class="news-card__txt">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                  <h2 class="news-card__title">
+                    Национальное достояние – парки
+                  </h2>
+                  <p class="news-card__txt">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад
+                    здесь начала складываться система национальных парков –
+                    охраняемых территорий, где и сегодня каждый может
+                    приобщиться к природе.
+                  </p>
                   <p class="news-card__media">Лента.ру</p>
                 </div>
               </div>
@@ -81,8 +100,15 @@
                 </div>
                 <div class="news-card__description">
                   <p class="news-card__date">2 августа, 2019</p>
-                  <h2 class="news-card__title">Национальное достояние – парки</h2>
-                  <p class="news-card__txt">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                  <h2 class="news-card__title">
+                    Национальное достояние – парки
+                  </h2>
+                  <p class="news-card__txt">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад
+                    здесь начала складываться система национальных парков –
+                    охраняемых территорий, где и сегодня каждый может
+                    приобщиться к природе.
+                  </p>
                   <p class="news-card__media">Лента.ру</p>
                 </div>
               </div>
@@ -97,12 +123,18 @@
                 </div>
                 <div class="news-card__description">
                   <p class="news-card__date">2 августа, 2019</p>
-                  <h2 class="news-card__title">Национальное достояние – парки</h2>
-                  <p class="news-card__txt">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                  <h2 class="news-card__title">
+                    Национальное достояние – парки
+                  </h2>
+                  <p class="news-card__txt">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад
+                    здесь начала складываться система национальных парков –
+                    охраняемых территорий, где и сегодня каждый может
+                    приобщиться к природе.
+                  </p>
                   <p class="news-card__media">Лента.ру</p>
                 </div>
               </div>
-
             </div>
             <button class="search__results-list-button">Показать еще</button>
           </div>
@@ -122,7 +154,11 @@
           <div class="news-card__description">
             <p class="news-card__date">2 августа, 2019</p>
             <h2 class="news-card__title">Национальное достояние – парки</h2>
-            <p class="news-card__txt">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+            <p class="news-card__txt">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+              начала складываться система национальных парков – охраняемых
+              территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
             <p class="news-card__media">Лента.ру</p>
           </div>
         </div>
@@ -136,7 +172,12 @@
               <a class="footer__nav-item-link" href="./index.html">Главная</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-item-link" href="https://praktikum.yandex.ru" target="_blank">Яндекс.Практикум</a>
+              <a
+                class="footer__nav-item-link"
+                href="https://praktikum.yandex.ru"
+                target="_blank"
+                >Яндекс.Практикум</a
+              >
             </li>
           </ul>
           <ul class="footer__social">
@@ -162,6 +203,6 @@
         </div>
       </footer>
     </div>
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.news.entry %>"></script>
   </body>
 </html>
