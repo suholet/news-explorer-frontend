@@ -1,0 +1,24 @@
+@import url(./__img/user-profile__img.css);
+@import url(./__desc/user-profile__desc.css);
+@import url(./__title/user-profile__title.css);
+@import url(./__txt/user-profile__txt.css);
+
+.user-profile {
+  display: flex;
+  flex-direction: row;
+  min-height: 624px;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 980px) {
+  .user-profile {
+    min-height: 354px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .user-profile {
+    flex-direction: column;
+    min-height: 752px;
+  }
+}

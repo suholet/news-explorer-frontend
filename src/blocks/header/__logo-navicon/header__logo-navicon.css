@@ -1,0 +1,31 @@
+@media screen and (max-width: 740px) {
+  .header__logo-navicon {
+    display: inline;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 0;
+    margin: 16px;
+    background: url('../../../images/menu.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header__logo-navicon_light {
+    background: url('../../../images/menu-light.svg');
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header__logo-navicon_mop {
+    background: url('../../../images/navbarclose.svg');
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header__logo-txt_mop {
+    color: #ffffff;
+  }
+}

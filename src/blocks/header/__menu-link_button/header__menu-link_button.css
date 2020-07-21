@@ -1,0 +1,22 @@
+.header__menu-link_button{
+  padding: 12px 12px 15px 12px;
+  border: 1px solid #1a1b22;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 980px) {
+  .header__menu-link_button{
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header__menu-link_button{
+    /* padding: 15px 105px 17px 105px; */
+    padding: 15px auto 17px auto;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+}

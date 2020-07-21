@@ -1,0 +1,42 @@
+.news-card__save-icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 24px 24px auto auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: hidden;
+  background: url('../../../images/bookmark-empty.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 980px) {
+  .news-card__save-icon {
+    margin: 8px 8px auto auto;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .news-card__save-icon {
+    margin: 16px 16px auto auto;
+  }
+}
+
+.news-card__save-icon:focus{
+  outline: none;
+}
+
+.news-card__save-icon:hover {
+  cursor: pointer;
+  background: url('../../../images/bookmark-empty-hovered.png');
+}
+
+.news-card__save-icon_saved {
+  background: url('../../../images/bookmark.png');
+}
+
+.news-card__save-icon_saved:hover {
+  cursor: pointer;
+  background: url('../../../images/bookmark-hovered.png');
+}

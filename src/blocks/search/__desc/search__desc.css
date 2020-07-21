@@ -1,0 +1,15 @@
+.search__desc {
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 980px) {
+  .search__desc {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .search__desc {
+    margin: 0 16px 122px 16px;
+  }
+}

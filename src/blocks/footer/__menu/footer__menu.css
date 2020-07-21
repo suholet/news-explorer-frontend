@@ -1,0 +1,12 @@
+.footer__menu {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 740px) {
+  .footer__menu {
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 288px;
+  }
+}

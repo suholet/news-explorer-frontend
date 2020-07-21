@@ -1,0 +1,26 @@
+@import url(./__title/statistics__title.css);
+@import url(./__greetings/statistics__greetings.css);
+@import url(./__label/statistics__label.css);
+
+/********* Сохраненные статьи *********/
+
+.statistics {
+  max-width: 530px;
+  min-height: 294px;
+  margin: 0 auto 0 104px;
+}
+
+@media screen and (max-width: 980px) {
+  .statistics {
+    max-width: 336px;
+    min-height: 204px;
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .statistics {
+    min-height: 246px;
+    margin: 0 16px;
+  }
+}

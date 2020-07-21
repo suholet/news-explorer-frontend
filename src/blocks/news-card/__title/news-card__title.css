@@ -1,0 +1,23 @@
+.news-card__title {
+  margin: 0 24px 16px 24px;
+  font-family: 'Roboto Slab', Times, serif;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 980px) {
+  .news-card__title {
+    margin: 0 16px 10px 16px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .news-card__title {
+    line-height: 26px;
+  }
+}

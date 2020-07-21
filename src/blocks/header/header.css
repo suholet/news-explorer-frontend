@@ -1,0 +1,46 @@
+@import url(./__menu-link/header__menu-link.css);
+@import url(./__menu-link_selected/header__menu-link_selected.css);
+@import url(./__menu-link_button/header__menu-link_button.css);
+@import url(./__menu-link_button_logout/header__menu-link_button_logout.css);
+@import url(./__logo/header__logo.css);
+@import url(./__logo-txt/header__logo-txt.css);
+@import url(./__menu/header__menu.css);
+@import url(./__menu-item/header__menu-item.css);
+@import url(./__logo-navicon/header__logo-navicon.css);
+
+
+.header {
+  min-height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 980px) {
+  .header{
+    min-height: 65px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header{
+    min-height: 55px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header_mop {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,19 @@
+.user-profile__txt {
+  max-width: 600px;
+  margin: 0 auto 34px 0;
+  font-family: Roboto, Times, serif;;
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 980px) {
+  .user-profile__txt {
+    max-width: 424px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .user-profile__txt  {
+    max-width: 288px;
+  }
+}

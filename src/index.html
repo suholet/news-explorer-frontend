@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>News Explorer</title>
+    <meta name="author" content="Dmitry Suholet" />
+    <meta name="description" content="Praktikum diploma project" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="<%=require('./images/favicon-32x32.png').default%>"
+    />
+    <link
+      rel="stylesheet"
+      href="<%= htmlWebpackPlugin.files.chunks.index.css %>"
+    />
+  </head>
+  <body>
+    <div class="root">
+      <div class="cover">
+        <header class="header">
+          <div class="header__logo">
+            <a class="header__logo-txt dark link" href="./index.html"
+              >NewsExplorer</a
+            >
+            <span class="header__logo-navicon"></span>
+          </div>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link header__menu-link_selected dark"
+                href="./index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link dark" href="./news.html"
+                >Сохранённые статьи</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link header__menu-link_button dark"
+                href="#"
+                >Авторизоваться&nbsp;</a
+              >
+            </li>
+          </ul>
+        </header>
+
+        <!-- Блок с поиском -->
+        <div class="search">
+          <h1 class="search__title">Что в мире творится?</h1>
+          <p class="search__desc">
+            Находите самые свежие статьи на любую тему и сохраняйте в своём
+            личном кабинете.
+          </p>
+          <div>
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Введите тему новости"
+            />
+            <button class="search__button">Искать</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Результаты поиска -->
+      <div class="search__results">
+        <div class="search__results-request">
+          <div class="search__results-request-progress">
+            <i class="search__results-request-progress-preloader"></i>
+            <p class="search__results-request-progress-txt">
+              Идет поиск новостей...
+            </p>
+          </div>
+          <div class="search__results-request-notfound">
+            <img
+              src="<%=require('./images/not-found.svg').default%>"
+              alt="Not found"
+              class="search__results-request-notfound-img"
+            />
+            <h2 class="search__results-request-notfound-title">
+              Ничего не найдено
+            </h2>
+            <p class="search__results-request-notfound-txt">
+              К сожалению по вашему запросу ничего не найдено.
+            </p>
+          </div>
+        </div>
+        <div class="search__results-list">
+          <h2 class="search__results-list-title">Результаты поиска</h2>
+          <!-- Тут рисуем карточки -->
+          <div class="search__results-list-cards">
+            <div class="search__results-list-cards-portion">
+              <div class="news-card">
+                <div class="news-card__image">
+                  <button class="news-card__save-icon"></button>
+                </div>
+                <div class="news-card__description">
+                  <p class="news-card__date">2 августа, 2019</p>
+                  <h2 class="news-card__title">
+                    Национальное достояние – парки
+                  </h2>
+                  <p class="news-card__txt">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад
+                    здесь начала складываться система национальных парков –
+                    охраняемых территорий, где и сегодня каждый может
+                    приобщиться к природе.
+                  </p>
+                  <p class="news-card__media">Лента.ру</p>
+                </div>
+              </div>
+
+              <div class="news-card">
+                <div class="news-card__image">
+                  <button
+                    class="news-card__save-icon news-card__save-icon_saved"
+                  ></button>
+                </div>
+                <div class="news-card__description">
+                  <p class="news-card__date">2 августа, 2019</p>
+                  <h2 class="news-card__title">
+                    Национальное достояние – парки
+                  </h2>
+                  <p class="news-card__txt">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад
+                    здесь начала складываться система национальных парков –
+                    охраняемых территорий, где и сегодня каждый может
+                    приобщиться к природе.
+                  </p>
+                  <p class="news-card__media">Лента.ру</p>
+                </div>
+              </div>
+
+              <div class="news-card">
+                <div class="news-card__image">
+                  <button class="news-card__save-icon"></button>
+                </div>
+                <div class="news-card__description">
+                  <p class="news-card__date">2 августа, 2019</p>
+                  <h2 class="news-card__title">
+                    Национальное достояние – парки
+                  </h2>
+                  <p class="news-card__txt">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад
+                    здесь начала складываться система национальных парков –
+                    охраняемых территорий, где и сегодня каждый может
+                    приобщиться к природе.
+                  </p>
+                  <p class="news-card__media">Лента.ру</p>
+                </div>
+              </div>
+            </div>
+            <button class="search__results-list-button">Показать еще</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Об авторе -->
+      <div class="user-profile">
+        <img
+          class="user-profile__img"
+          src="<%=require('./images/profile.jpg').default%>"
+          alt="Дмитрий Сухолет"
+        />
+        <div class="user-profile__desc">
+          <h2 class="user-profile__title">Об авторе</h2>
+          <p class="user-profile__txt">
+            Это блок с описанием автора проекта. Здесь следует указать, как вас
+            зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+          </p>
+          <p class="user-profile__txt">
+            Также можно рассказать о процессе обучения в Практикуме, чему вы тут
+            научились, и чем можете помочь потенциальным заказчикам.
+          </p>
+        </div>
+      </div>
+
+      <!-- Окно входа -->
+      <div class="popup popup__signin popup_is-opened1">
+        <div class="popup__content">
+          <img
+            src="<%=require('./images/close.svg').default%>"
+            alt="Close"
+            class="popup__close"
+          />
+          <h2 class="popup__title">Вход</h2>
+          <form class="popup__form" name="signin" novalidate>
+            <div class="popup__input-container">
+              <span class="popup__input-header">Email</span>
+              <input
+                id="signin-email"
+                type="email"
+                name="email"
+                class="popup__input popup__input_type_email"
+                placeholder="Введите почту"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <span id="error-signin-email" class="error-message"
+                >Неправильный формат email</span
+              >
+            </div>
+            <div class="popup__input-container">
+              <span class="popup__input-header">Пароль</span>
+              <input
+                id="signin-password"
+                type="password"
+                name="password"
+                class="popup__input popup__input_type_password"
+                placeholder="Введите пароль"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <span id="error-signin-password" class="error-message"></span>
+            </div>
+            <div class="popup__action">
+              <span id="error-signin-popup" class="error-message"
+                >Такой пользователь уже есть</span
+              >
+              <button type="submit" class="popup__action-button">
+                Войти
+              </button>
+              <p class="popup__action-link">
+                или
+                <a class="popup__action-link-button" href="#"
+                  >Зарегистрироваться</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Окно регистрации -->
+      <div class="popup popup__signup popup_is-opened1">
+        <div class="popup__content">
+          <img
+            src="<%=require('./images/close.svg').default%>"
+            alt="Close"
+            class="popup__close"
+          />
+          <h2 class="popup__title">Регистрация</h2>
+          <form class="popup__form" name="signup" novalidate>
+            <div class="popup__input-container">
+              <span class="popup__input-header">Email</span>
+              <input
+                id="signup-email"
+                type="email"
+                name="email"
+                class="popup__input popup__input_type_email"
+                placeholder="Введите почту"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <span id="error-signup-email" class="error-message"
+                >Неправильный формат email</span
+              >
+            </div>
+            <div class="popup__input-container">
+              <span class="popup__input-header">Пароль</span>
+              <input
+                id="signup-password"
+                type="password"
+                name="password"
+                class="popup__input popup__input_type_password"
+                placeholder="Введите пароль"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <span id="error-signup-password" class="error-message"></span>
+            </div>
+            <div class="popup__input-container">
+              <span class="popup__input-header">Имя</span>
+              <input
+                id="signup-name"
+                type="text"
+                name="name"
+                class="popup__input popup__input_type_name"
+                placeholder="Введите своё имя"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <span id="error-signup-name" class="error-message"></span>
+            </div>
+            <div class="popup__action">
+              <span id="error-signup-popup" class="error-message"
+                >Такой пользователь уже есть</span
+              >
+              <button type="submit" class="popup__action-button">
+                Зарегистрироваться
+              </button>
+              <p class="popup__action-link">
+                или
+                <a class="popup__action-link-button" href="#">Войти</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Окно успешной регистрации -->
+      <div class="popup popup__singnedup popup_is-opened1">
+        <div class="popup__content">
+          <img
+            src="<%=require('./images/close.svg').default%>"
+            alt="Close"
+            class="popup__close"
+          />
+          <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
+          <button class="popup__signin-link-button">Выполнить вход</button>
+        </div>
+      </div>
+
+      <!-- Шаблон карточки -->
+      <template data-component="card">
+        <div class="news-card">
+          <div class="news-card__image">
+            <button class="news-card__save-icon"></button>
+          </div>
+          <div class="news-card__description">
+            <p class="news-card__date">2 августа, 2019</p>
+            <h2 class="news-card__title">Национальное достояние – парки</h2>
+            <p class="news-card__txt">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+              начала складываться система национальных парков – охраняемых
+              территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="news-card__media">Лента.ру</p>
+          </div>
+        </div>
+      </template>
+
+      <footer class="footer">
+        <p class="footer__copy">&copy; 2020 Supersite, Powered by News API</p>
+        <div class="footer__menu">
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a class="footer__nav-item-link" href="./index.html">Главная</a>
+            </li>
+            <li class="footer__nav-item">
+              <a
+                class="footer__nav-item-link"
+                href="https://praktikum.yandex.ru"
+                target="_blank"
+                >Яндекс.Практикум</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__social">
+            <li>
+              <a href="https://github.com/suholet" target="_blank">
+                <img
+                  src="<%=require('./images/github.svg').default%>"
+                  alt="Github"
+                  class="footer__social-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/suholet" target="_blank">
+                <img
+                  src="<%=require('./images/fb.svg').default%>"
+                  alt="Facebook"
+                  class="footer__social-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
+  </body>
+</html>

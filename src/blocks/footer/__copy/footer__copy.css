@@ -1,0 +1,21 @@
+.footer__copy {
+  /* margin: 32px 0 24px 104px; */
+  margin: 0 0 0 104px;
+  min-width: 288px;
+  font-family: Roboto, Times, serif;;
+  font-size: 16px;
+  line-height: 22px;
+  color: #b6bcbf;
+}
+
+@media screen and (max-width: 980px) {
+  .footer__copy {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .footer__copy {
+    margin: 0 auto 22px auto;
+  }
+}

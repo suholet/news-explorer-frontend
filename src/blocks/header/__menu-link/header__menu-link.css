@@ -1,0 +1,11 @@
+.header__menu-link {
+  color: #1a1b22;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 740px) {
+  .header__menu-link {
+    color: #ffffff;
+    margin: 0 16px;
+  }
+}

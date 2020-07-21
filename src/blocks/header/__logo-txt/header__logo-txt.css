@@ -1,0 +1,25 @@
+.header__logo-txt {
+  margin: 30px 0 26px 104px;
+  font-family: 'Roboto Slab', Times, serif;;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1a1b22;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 980px) {
+  .header__logo-txt {
+    margin: 22px 0 18px 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header__logo-txt {
+    margin: 16px 0 16px 16px;
+    font-size: 16px;
+  }
+
+  .header__logo-txt_mop {
+    color: #ffffff;
+  }
+}

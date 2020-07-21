@@ -1,0 +1,9 @@
+.footer__nav-item-link {
+  /* margin: 0 0 0 40px; */
+  color: #1a1b22;
+  text-decoration: none;
+  font-family: Roboto, Times, serif;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
