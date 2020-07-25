@@ -9,6 +9,5 @@
 }
 
 .popup__input-container_invalid .error-message {
-  padding: 10px;
-  opacity: 1;
+  display: inline;
 }
