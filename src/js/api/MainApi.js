@@ -71,8 +71,7 @@ class MainApi {
         throw err;
       });
   }
-  createArticle(keyword, title, text, source, link, image) {
-    const date = new Date();
+  createArticle(keyword, title, text, date, source, link, image) {
     return fetch(`${api.MAIN_URL}/articles`, {
       credentials: 'include',
       method: "POST",

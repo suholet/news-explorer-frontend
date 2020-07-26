@@ -1,30 +1,23 @@
 import "../pages/news.css";
 
-function showMobileMenu() {
-  document
-    .querySelector(".header__logo-navicon")
-    .classList.toggle("header__logo-navicon_mop");
-  document.querySelector(".header").classList.toggle("header_mop");
-  document.querySelector(".header__logo").classList.toggle("header__logo_mop");
-  document
-    .querySelector(".header__logo-txt")
-    .classList.toggle("header__logo-txt_mop");
-  document.querySelector(".header__menu").classList.toggle("header__menu_mop");
-  // All
-  let links = document.querySelectorAll(".header__menu-item");
-  links.forEach((linkElement) => {
-    linkElement.classList.toggle("header__menu-item_mop");
-  });
+import {isLoggedIn, getUserName} from "./utils/utils";
+import BaseComponent from "./components/BaseComponent";
+import Header from "./components/Header";
+import Statistics from "./components/Statistics";
+import SearchResults from "./components/SearchResults";
 
-  // news.html
-  document
-    .querySelector(".statistics__title")
-    .classList.toggle("statistics__title_mop");
+function setHeaderProps() {
+  const props = JSON.parse(localStorage.getItem("props"));
+  return props;
 }
 
-// IIFE
 (function () {
-  // Обработчик для меню
-  const burgerElement = document.querySelector(".header__logo-navicon");
-  burgerElement.addEventListener("click", showMobileMenu);
+  if (isLoggedIn()) {
+    new BaseComponent();
+    new Header(false, setHeaderProps());
+    new Statistics(getUserName());
+    new SearchResults();
+  } else {
+    location.href ="index.html";
+  }
 })();
