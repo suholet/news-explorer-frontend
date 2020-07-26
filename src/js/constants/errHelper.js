@@ -14,3 +14,21 @@ export const errMsg = {
   NOT_FOUND: "Запрашиваемый ресурс не найден",
   DEFAULT: "Что-то пошло не так",
 };
+
+export const newsErrTitle = {
+  NOT_FOUND: "Ничего не найдено",
+  EMPTY: "Ошибка",
+  DEFAULT: "Во время запроса произошла ошибка",
+};
+
+export const newsErrMsg = {
+  NOT_FOUND: "К сожалению по вашему запросу ничего не найдено",
+  EMPTY: "Нужно ввести ключевое слово",
+  DEFAULT: "Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.",
+};
+
+export const errorType = {
+  NOT_FOUND: "NOT_FOUND",
+  EMPTY: "EMPTY",
+  DEFAULT: "DEFAULT",
+};

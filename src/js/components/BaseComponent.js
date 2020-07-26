@@ -1,17 +1,15 @@
 class BaseComponent {
-  constructor({ burgerElement, showMoreButtonElement }) {
-    this._burgerElement = burgerElement;
-    this._showMoreButtonElement = showMoreButtonElement;
+  constructor() {
+    this._burgerElement = document.querySelector(".header__logo-navicon");
 
     this._setHandlers();
   }
 
   _setHandlers() {
-    this._burgerElement.addEventListener("click", this.showMobileMenu.bind(this));
-    this._showMoreButtonElement.addEventListener("click", this.showMoreCards.bind(this));
+    this._burgerElement.addEventListener("click", this._showMobileMenu.bind(this));
   }
 
-  showMobileMenu() {
+  _showMobileMenu() {
     document.querySelector(".header__logo-navicon").classList.toggle("header__logo-navicon_mop");
     document.querySelector(".header").classList.toggle("header_mop");
     document.querySelector(".header__logo").classList.toggle("header__logo_mop");
@@ -29,8 +27,6 @@ class BaseComponent {
       newsTitle.classList.toggle("statistics__title_mop");
     }
   }
-
-  showMoreCards() {}
 }
 
 

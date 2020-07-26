@@ -72,7 +72,7 @@ class MainApi {
       });
   }
   createArticle(keyword, title, text, source, link, image) {
-    const date = "2012-04-23T18:25:43.511Z";
+    const date = new Date();
     return fetch(`${api.MAIN_URL}/articles`, {
       credentials: 'include',
       method: "POST",
@@ -83,6 +83,7 @@ class MainApi {
         keyword: keyword,
         title: title,
         text: text,
+        date: date,
         source: source,
         link: link,
         image: image,
@@ -98,7 +99,7 @@ class MainApi {
       credentials: 'include',
       method: "DELETE",
     })
-      .then((res) => this.parseResponse(res))
+      .then((res) => this._parseResponse(res))
       .catch((err) => {
         throw err;
       });

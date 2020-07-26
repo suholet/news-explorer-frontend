@@ -8,6 +8,7 @@
 @import url(./__title/news-card__title.css);
 @import url(./__txt/news-card__txt.css);
 @import url(./__media/news-card__media.css);
+@import url(./__url/news-card__url.css);
 
 .news-card {
   flex: 0 1 400px;

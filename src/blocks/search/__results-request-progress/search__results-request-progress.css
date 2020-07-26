@@ -1,4 +1,4 @@
 .search__results-request-progress {
-  /*display: none;  Чтобы показать удали */
+  display: none;
   height: 282px;
 }

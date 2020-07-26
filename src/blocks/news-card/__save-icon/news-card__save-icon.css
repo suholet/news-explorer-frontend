@@ -2,7 +2,8 @@
   width: 40px;
   height: 40px;
   padding: 0;
-  margin: 24px 24px auto auto;
+  /* margin: 24px 24px auto auto; */
+  margin: 0;
   background-color: #ffffff;
   border-radius: 8px;
   border: hidden;
@@ -13,13 +14,15 @@
 
 @media screen and (max-width: 980px) {
   .news-card__save-icon {
-    margin: 8px 8px auto auto;
+    /* margin: 0px 0px auto auto; */
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 740px) {
   .news-card__save-icon {
-    margin: 16px 16px auto auto;
+    /* margin: 16px 16px auto auto; */
+    margin: 0;
   }
 }
 

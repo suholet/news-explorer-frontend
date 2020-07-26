@@ -177,9 +177,9 @@ class Form {
   _setServerError(err) {
     Promise.resolve(err).then(error => {
       const errElement = this.isSignin ? document.getElementById("error-signin-popup") : document.getElementById("error-signup-popup");
-      console.log("error: ", error);
+      //console.log("error: ", error);
       const errorTxt = errMsg[error.message] === undefined ? errMsg.DEFAULT : errMsg[error.message];
-      console.log("Err txt", errorTxt);
+      //console.log("Err txt", errorTxt);
       errElement.textContent = errorTxt;
       errElement.style.display = "block";
     });
