@@ -7,3 +7,8 @@
   content: url('../../../images/logout.svg');
   position: absolute;
 }
+
+.dark.header__menu-link_button_logout::after {
+  content: url('../../../images/logout-dark.svg');
+  position: absolute;
+}

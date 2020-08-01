@@ -12,6 +12,7 @@
 
 .popup__action-button:focus {
   background: #347eff;
+  outline: none;
 }
 
 .popup__action-button:disabled {
